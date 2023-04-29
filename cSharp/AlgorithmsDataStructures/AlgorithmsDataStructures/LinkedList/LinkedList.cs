@@ -24,6 +24,7 @@ namespace AlgorithmsDataStructures.LinkedList
 
         public Node DeleteFirst() // again not really deleting anything, the spot will still exist logically, just changing which element is the first
                                   // i guess garbage collector removes it since it has no links to any other element and is inaccessable
+        
         {
             // assign temporary variable
             Node temp = First;

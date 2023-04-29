@@ -1,11 +1,7 @@
-﻿using AlgorithmsDataStructures;
-using AlgorithmsDataStructures.AbstractDataType;
-using AlgorithmsDataStructures.BinarySearchTree;
+﻿using AlgorithmsDataStructures.BinarySearchTree;
 using AlgorithmsDataStructures.BnarySearch;
-using AlgorithmsDataStructures.LinkedList;
-using AlgorithmsDataStructures.QueueTwo;
-using System.Collections;
-using System.Linq;
+using AlgorithmsDataStructures.BubbleSort;
+using AlgorithmsDataStructures.Recursion;
 
 // YT tutorial https://www.youtube.com/watch?v=5o1eNLXRgy8&list=PL82C6-O4XrHf49SjEZWSa5DHN--ZRrcN_&index=3
 
@@ -13,6 +9,30 @@ using System.Linq;
 
 
 int[] array = new int[] { -150, -20, 6, 10, 90, 333, 345, 385, 400, 412, 435, 471, 490, 500, 501, 502, 506, 507, 523, 543 };
+int[] arrayTwo = new int[] { 465, 8, 3, 9, 48, -450, -5 };
+
+// Recursion
+
+Recursion recursion = new Recursion();
+
+Console.WriteLine(recursion.IterativeFactorial(5));
+
+Console.WriteLine(recursion.RecursiveFactorial(5));
+
+
+//---------------------------------------------------------------
+
+// Bubble sort   very inefficient, shouldnt use O(N^2)
+
+BubbleSort bubbleSort = new BubbleSort();
+
+bubbleSort.Sort(arrayTwo);
+//foreach (var item in arrayTwo)
+//{
+//    Console.Write(item + " ");
+//}
+
+//-----------------------------------------------------------------
 
 // Binary Search tree
 
