@@ -1,15 +1,39 @@
 ﻿using AlgorithmsDataStructures;
 using AlgorithmsDataStructures.AbstractDataType;
+using AlgorithmsDataStructures.BinarySearchTree;
+using AlgorithmsDataStructures.BnarySearch;
 using AlgorithmsDataStructures.LinkedList;
 using AlgorithmsDataStructures.QueueTwo;
 using System.Collections;
+using System.Linq;
 
 // YT tutorial https://www.youtube.com/watch?v=5o1eNLXRgy8&list=PL82C6-O4XrHf49SjEZWSa5DHN--ZRrcN_&index=3
 
 
 
 
-int[] array = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+int[] array = new int[] { -150, -20, 6, 10, 90, 333, 345, 385, 400, 412, 435, 471, 490, 500, 501, 502, 506, 507, 523, 543 };
+
+// Binary Search tree
+
+BinarySearchTree bst = new BinarySearchTree();
+
+bst.Insert(7, "squirtle");
+bst.Insert(23, "ekans");
+bst.Insert(151, "mew");
+bst.Insert(4, "charmander");
+bst.Insert(1, "bulbasaur");
+
+Console.WriteLine(bst.Find(1));
+
+// ----------------------------------------------------------------------------
+
+// Binary search only really works on a sorted array O(logN)
+
+//Array.Sort(array);
+
+BinarySearch binarySearch = new BinarySearch();
+Console.WriteLine(array[binarySearch.Search(array, 501)]); 
 
 
 // Queue
@@ -19,67 +43,68 @@ AlgorithmsDataStructures.Queue.Queue ytQueue = new AlgorithmsDataStructures.Queu
                                                                                               * Still its good enough to understand
                                                                                               * how it works under the hood of an integrated queue from
                                                                                               * System.Collections
+                                                                                              * O(1)
                                                                                               */
-ytQueue.Enqueue(1);
-ytQueue.Enqueue(2);
-ytQueue.Enqueue(3);
-ytQueue.Enqueue(4);
-ytQueue.Enqueue(5);
+//ytQueue.Enqueue(1);
+//ytQueue.Enqueue(2);
+//ytQueue.Enqueue(3);
+//ytQueue.Enqueue(4);
+//ytQueue.Enqueue(5);
 
-ytQueue.Dequeue();
-ytQueue.Dequeue();
+//ytQueue.Dequeue();
+//ytQueue.Dequeue();
 
-Console.WriteLine(ytQueue.Peek());
+//Console.WriteLine(ytQueue.Peek());
 
-// -----
-// Integrated .net/c# queue
-Queue<int> queue = new Queue<int>();
-queue.Enqueue(1);
-queue.Dequeue();
+//// -----
+//// Integrated .net/c# queue
+//Queue<int> queue = new Queue<int>();
+//queue.Enqueue(1);
+//queue.Dequeue();
 
-Queue<Order> ordersQueue = new Queue<Order>();
-foreach(Order order in ReceiveOrdersFromBranch1()) // enqueues the orders of branch1
-{
-    ordersQueue.Enqueue(order);
-}
-foreach (Order order in ReceiveOrdersFromBranch2()) // enqueues the orders of branch2
-{
-    ordersQueue.Enqueue(order);
-}
-while (ordersQueue.Count > 0) // as long as the que is not empty process the orders
-{
-    // remove the order at the front of queue
-    // and store it in a variable called currentOrder
-    Order currentOrder = ordersQueue.Dequeue();
-    // process order
-    currentOrder.ProccessOrder();
-}
-static Order[] ReceiveOrdersFromBranch1()
-{
-    Order[] orders = new Order[]
-    {
-        new Order(1,5),
-        new Order(2,4),
-        new Order(6,10),
-    };
-    return orders;
-}
-static Order[] ReceiveOrdersFromBranch2()
-{
-    Order[] orders = new Order[]
-    {
-        new Order(3,5),
-        new Order(4,4),
-        new Order(5,10),
-    };
-    return orders;
-}
+//Queue<Order> ordersQueue = new Queue<Order>();
+//foreach(Order order in ReceiveOrdersFromBranch1()) // enqueues the orders of branch1
+//{
+//    ordersQueue.Enqueue(order);
+//}
+//foreach (Order order in ReceiveOrdersFromBranch2()) // enqueues the orders of branch2
+//{
+//    ordersQueue.Enqueue(order);
+//}
+//while (ordersQueue.Count > 0) // as long as the que is not empty process the orders
+//{
+//    // remove the order at the front of queue
+//    // and store it in a variable called currentOrder
+//    Order currentOrder = ordersQueue.Dequeue();
+//    // process order
+//    currentOrder.ProccessOrder();
+//}
+//static Order[] ReceiveOrdersFromBranch1()
+//{
+//    Order[] orders = new Order[]
+//    {
+//        new Order(1,5),
+//        new Order(2,4),
+//        new Order(6,10),
+//    };
+//    return orders;
+//}
+//static Order[] ReceiveOrdersFromBranch2()
+//{
+//    Order[] orders = new Order[]
+//    {
+//        new Order(3,5),
+//        new Order(4,4),
+//        new Order(5,10),
+//    };
+//    return orders;
+//}
 
 
 // ----------------------------------
 
 
-// Stack
+// Stack O(1)
 AlgorithmsDataStructures.Stack.Stack stack = new AlgorithmsDataStructures.Stack.Stack(10);
 
 for (int i = 0; i < 3; i++)
@@ -104,7 +129,7 @@ stack.Peek();
 
 
 
-// Linked list. Rarely used anymore.
+// Linked list. Rarely used anymore. If implemented without traversing - O(1)
 
 //LinkedList linkedList= new LinkedList();
 
