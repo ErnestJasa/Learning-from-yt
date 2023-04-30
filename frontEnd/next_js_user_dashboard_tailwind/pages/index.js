@@ -6,7 +6,7 @@ import BarChart from '@/components/BarChart'
 import RecentOrders from '@/components/RecentOrders'
 const inter = Inter({ subsets: ['latin'] })
 
-// https://youtu.be/KpGZjrrS3pY?list=PLuyywttDftVX8xTNErbwKUp2VYarnDm2B&t=3444 tutorial
+// https://youtu.be/KpGZjrrS3pY?list=PLuyywttDftVX8xTNErbwKUp2VYarnDm2B tutorial
 
 
 export default function Home() {
