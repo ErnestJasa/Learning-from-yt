@@ -1,6 +1,7 @@
 ﻿using AlgorithmsDataStructures.BinarySearchTree;
 using AlgorithmsDataStructures.BnarySearch;
 using AlgorithmsDataStructures.BubbleSort;
+using AlgorithmsDataStructures.HashTable;
 using AlgorithmsDataStructures.Recursion;
 
 // YT tutorial https://www.youtube.com/watch?v=5o1eNLXRgy8&list=PL82C6-O4XrHf49SjEZWSa5DHN--ZRrcN_&index=3
@@ -11,13 +12,32 @@ using AlgorithmsDataStructures.Recursion;
 int[] array = new int[] { -150, -20, 6, 10, 90, 333, 345, 385, 400, 412, 435, 471, 490, 500, 501, 502, 506, 507, 523, 543 };
 int[] arrayTwo = new int[] { 465, 8, 3, 9, 48, -450, -5 };
 
+HashTable hashTable = new HashTable();
+
+hashTable.Set("teddy", "55-9656-74");
+hashTable.Set("steve", "87-4986-15"); // will collide with teddy and wont insert
+hashTable.Set("jessica", "98-5687-14");
+hashTable.Set("sarra", "83-9874-17"); // will collide with teddy and wont insert
+hashTable.Set("jennifer", "98-15357-14");
+
+Console.WriteLine(hashTable.Get("teddy"));
+Console.WriteLine(hashTable.Get("steve"));
+Console.WriteLine(hashTable.Get("jessica"));
+Console.WriteLine(hashTable.Get("sarra"));
+Console.WriteLine(hashTable.Get("jennifer"));
+
+
+
+
+//-----------------------------------------------------------------
+
 // Recursion
 
 Recursion recursion = new Recursion();
 
-Console.WriteLine(recursion.IterativeFactorial(5));
+//Console.WriteLine(recursion.IterativeFactorial(5));
 
-Console.WriteLine(recursion.RecursiveFactorial(5));
+//Console.WriteLine(recursion.RecursiveFactorial(5));
 
 
 //---------------------------------------------------------------
@@ -44,7 +64,12 @@ bst.Insert(151, "mew");
 bst.Insert(4, "charmander");
 bst.Insert(1, "bulbasaur");
 
-Console.WriteLine(bst.Find(1));
+//Console.WriteLine(bst.Find(1));
+
+//bst.PrintPostOrderTraversal();
+
+
+
 
 // ----------------------------------------------------------------------------
 
@@ -53,8 +78,13 @@ Console.WriteLine(bst.Find(1));
 //Array.Sort(array);
 
 BinarySearch binarySearch = new BinarySearch();
-Console.WriteLine(array[binarySearch.Search(array, 501)]); 
 
+//Console.WriteLine(array[binarySearch.Search(array, 501)]); 
+
+
+
+
+// ----------------------------------------------------------------------------
 
 // Queue
 

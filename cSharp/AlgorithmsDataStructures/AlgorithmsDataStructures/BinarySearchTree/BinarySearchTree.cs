@@ -14,9 +14,9 @@ namespace AlgorithmsDataStructures.BinarySearchTree
         public void Insert(int key, string value)
         {
             Root = InsertItem(Root, key, value);
-        }
+        }     
 
-        private TreeNode InsertItem(TreeNode node, int key, string value)
+        private TreeNode InsertItem(TreeNode node, int key, string value) // the first passed in node is the root
         {
             TreeNode newNode = new TreeNode(key, value);
             // if this is the first insert, create the root
@@ -43,6 +43,8 @@ namespace AlgorithmsDataStructures.BinarySearchTree
             return node == null ? null : node.Value;
         }
 
+        // binary search tree
+
         private TreeNode? Find(TreeNode root, int key)
         {
             if(root == null || root.Key == key)
@@ -58,6 +60,59 @@ namespace AlgorithmsDataStructures.BinarySearchTree
             else
             {
                 return null;
+            }
+        }
+
+
+        // Depth first search
+
+            // In order travesal
+        public void PrintInOrderTraversal()
+        {
+            InOrderTraversal(Root);
+        }
+
+        private void InOrderTraversal(TreeNode node) // goes all the way to the right until hits null, then prints out the nodes, until is able to go right
+        {
+            if(node != null)
+            {
+                InOrderTraversal(node.LeftChild);
+                Console.WriteLine(node.Key + " " + node.Value);
+                InOrderTraversal(node.RightChild);
+            }
+        }
+
+            // Pre order traversal
+
+        public void PrintPreOrderTraversal()
+        {
+            PreOrderTraversal(Root);
+        }
+
+        private void PreOrderTraversal(TreeNode node)
+        {
+            if (node != null)
+            {
+                Console.WriteLine(node.Key + " " + node.Value);
+                PreOrderTraversal(node.LeftChild);
+                PreOrderTraversal(node.RightChild);
+            }
+        }
+
+            // Post order traversal
+
+        public void PrintPostOrderTraversal()
+        {
+            PostOrderTraversal(Root);
+        }
+
+        private void PostOrderTraversal(TreeNode node)
+        {
+            if (node != null)
+            {
+                PostOrderTraversal(node.LeftChild);
+                PostOrderTraversal(node.RightChild);
+                Console.WriteLine(node.Key + " " + node.Value);
             }
         }
     }
