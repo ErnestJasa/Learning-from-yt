@@ -2,6 +2,7 @@
 using AlgorithmsDataStructures.BnarySearch;
 using AlgorithmsDataStructures.BubbleSort;
 using AlgorithmsDataStructures.HashTable;
+using AlgorithmsDataStructures.QuickSort;
 using AlgorithmsDataStructures.Recursion;
 
 // YT tutorial https://www.youtube.com/watch?v=5o1eNLXRgy8&list=PL82C6-O4XrHf49SjEZWSa5DHN--ZRrcN_&index=3
@@ -10,21 +11,42 @@ using AlgorithmsDataStructures.Recursion;
 
 
 int[] array = new int[] { -150, -20, 6, 10, 90, 333, 345, 385, 400, 412, 435, 471, 490, 500, 501, 502, 506, 507, 523, 543 };
-int[] arrayTwo = new int[] { 465, 8, 3, 9, 48, -450, -5 };
+int[] arrayTwo = new int[] { 8, 3, 9, 48, -450, -5 };
+int[] arrayThree = new int[] { 10, 16, 8, 12, 15, 6, 3, 9, 5};
+
+
+// Quicksort
+
+
+QuickSort quickSort = new QuickSort();
+
+quickSort.Sort(arrayThree);
+
+foreach (var item in arrayThree)
+{
+    Console.Write(item + " ");
+}
+
+
+
+
+//-----------------------------------------------------------------
+
+// HashTable
 
 HashTable hashTable = new HashTable();
 
-hashTable.Set("teddy", "55-9656-74");
-hashTable.Set("steve", "87-4986-15"); // will collide with teddy and wont insert
-hashTable.Set("jessica", "98-5687-14");
-hashTable.Set("sarra", "83-9874-17"); // will collide with teddy and wont insert
-hashTable.Set("jennifer", "98-15357-14");
+//hashTable.Set("teddy", "55-9656-74");
+//hashTable.Set("steve", "87-4986-15"); // will collide with teddy and wont insert
+//hashTable.Set("jessica", "98-5687-14");
+//hashTable.Set("sarra", "83-9874-17"); // will collide with teddy and wont insert
+//hashTable.Set("jennifer", "98-15357-14");
 
-Console.WriteLine(hashTable.Get("teddy"));
-Console.WriteLine(hashTable.Get("steve"));
-Console.WriteLine(hashTable.Get("jessica"));
-Console.WriteLine(hashTable.Get("sarra"));
-Console.WriteLine(hashTable.Get("jennifer"));
+//Console.WriteLine(hashTable.Get("teddy"));
+//Console.WriteLine(hashTable.Get("steve"));
+//Console.WriteLine(hashTable.Get("jessica"));
+//Console.WriteLine(hashTable.Get("sarra"));
+//Console.WriteLine(hashTable.Get("jennifer"));
 
 
 
@@ -44,10 +66,12 @@ Recursion recursion = new Recursion();
 
 // Bubble sort   very inefficient, shouldnt use O(N^2)
 
+int[] arrThree = new int[] { 465, 8, 3, 9,  -450, -5 };
+
 BubbleSort bubbleSort = new BubbleSort();
 
-bubbleSort.Sort(arrayTwo);
-//foreach (var item in arrayTwo)
+bubbleSort.Sort(arrThree);
+//foreach (var item in arrThree)
 //{
 //    Console.Write(item + " ");
 //}

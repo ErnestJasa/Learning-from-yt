@@ -14,6 +14,7 @@ namespace my_books
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
+            Console.WriteLine("hello");
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
