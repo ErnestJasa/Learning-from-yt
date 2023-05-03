@@ -1,6 +1,7 @@
 ﻿using AlgorithmsDataStructures.BinarySearchTree;
 using AlgorithmsDataStructures.BnarySearch;
 using AlgorithmsDataStructures.BubbleSort;
+using AlgorithmsDataStructures.DijkstraSearch;
 using AlgorithmsDataStructures.HashTable;
 using AlgorithmsDataStructures.QuickSort;
 using AlgorithmsDataStructures.Recursion;
@@ -13,6 +14,19 @@ using AlgorithmsDataStructures.Recursion;
 int[] array = new int[] { -150, -20, 6, 10, 90, 333, 345, 385, 400, 412, 435, 471, 490, 500, 501, 502, 506, 507, 523, 543 };
 int[] arrayTwo = new int[] { 8, 3, 9, 48, -450, -5 };
 int[] arrayThree = new int[] { 10, 16, 8, 12, 15, 6, 3, 9, 5};
+int[,] graph =
+           {
+             { 0, 6, 0, 0, 0, 0, 0, 9, 0 },
+             { 6, 0, 9, 0, 0, 0, 0, 11, 0 },
+             { 0, 9, 0, 5, 0, 6, 0, 0, 2 },
+             { 0, 0, 5, 0, 9, 16, 0, 0, 0 },
+             { 0, 0, 0, 9, 0, 10, 0, 0, 0 },
+             { 0, 0, 6, 0, 10, 0, 2, 0, 0 },
+             { 0, 0, 0, 16, 0, 2, 0, 1, 6 },
+             { 9, 11, 0, 0, 0, 0, 1, 0, 5 },
+             { 0, 0, 2, 0, 0, 0, 6, 5, 0 }
+            };
+
 
 
 // Quicksort
@@ -22,10 +36,10 @@ QuickSort quickSort = new QuickSort();
 
 quickSort.Sort(arrayThree);
 
-foreach (var item in arrayThree)
-{
-    Console.Write(item + " ");
-}
+//foreach (var item in arrayThree)
+//{
+//    Console.Write(item + " ");
+//}
 
 
 
@@ -87,6 +101,8 @@ bst.Insert(23, "ekans");
 bst.Insert(151, "mew");
 bst.Insert(4, "charmander");
 bst.Insert(1, "bulbasaur");
+
+//Console.WriteLine(bst.BreathFirstSearch(1));
 
 //Console.WriteLine(bst.Find(1));
 
