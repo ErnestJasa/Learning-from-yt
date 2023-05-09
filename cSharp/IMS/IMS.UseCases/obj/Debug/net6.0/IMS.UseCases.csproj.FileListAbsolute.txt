@@ -1,0 +1,15 @@
+D:\visual studio\IMS\IMS.UseCases\bin\Debug\net6.0\IMS.UseCases.deps.json
+D:\visual studio\IMS\IMS.UseCases\bin\Debug\net6.0\IMS.UseCases.dll
+D:\visual studio\IMS\IMS.UseCases\bin\Debug\net6.0\IMS.UseCases.pdb
+D:\visual studio\IMS\IMS.UseCases\bin\Debug\net6.0\IMS.CoreBusiness.dll
+D:\visual studio\IMS\IMS.UseCases\bin\Debug\net6.0\IMS.CoreBusiness.pdb
+D:\visual studio\IMS\IMS.UseCases\obj\Debug\net6.0\IMS.UseCases.csproj.AssemblyReference.cache
+D:\visual studio\IMS\IMS.UseCases\obj\Debug\net6.0\IMS.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+D:\visual studio\IMS\IMS.UseCases\obj\Debug\net6.0\IMS.UseCases.AssemblyInfoInputs.cache
+D:\visual studio\IMS\IMS.UseCases\obj\Debug\net6.0\IMS.UseCases.AssemblyInfo.cs
+D:\visual studio\IMS\IMS.UseCases\obj\Debug\net6.0\IMS.UseCases.csproj.CoreCompileInputs.cache
+D:\visual studio\IMS\IMS.UseCases\obj\Debug\net6.0\IMS.UseCases.csproj.CopyComplete
+D:\visual studio\IMS\IMS.UseCases\obj\Debug\net6.0\IMS.UseCases.dll
+D:\visual studio\IMS\IMS.UseCases\obj\Debug\net6.0\refint\IMS.UseCases.dll
+D:\visual studio\IMS\IMS.UseCases\obj\Debug\net6.0\IMS.UseCases.pdb
+D:\visual studio\IMS\IMS.UseCases\obj\Debug\net6.0\ref\IMS.UseCases.dll
