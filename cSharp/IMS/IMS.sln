@@ -3,18 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryManagementSystem", "InventoryManagementSystem\InventoryManagementSystem.csproj", "{D6D34A57-07B6-4A49-B207-B287AC07BB6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventoryManagementSystem", "InventoryManagementSystem\InventoryManagementSystem.csproj", "{D6D34A57-07B6-4A49-B207-B287AC07BB6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMS.UseCases", "IMS.UseCases\IMS.UseCases.csproj", "{5879A009-D8B4-4DA3-A509-87FD0C9D2BD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IMS.UseCases", "IMS.UseCases\IMS.UseCases.csproj", "{5879A009-D8B4-4DA3-A509-87FD0C9D2BD0}"
 	ProjectSection(ProjectDependencies) = postProject
 		{8E3C48E9-A66A-49A2-93C1-4424E51FCA22} = {8E3C48E9-A66A-49A2-93C1-4424E51FCA22}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMS.CoreBusiness", "IMS.CoreBusiness\IMS.CoreBusiness.csproj", "{8E3C48E9-A66A-49A2-93C1-4424E51FCA22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IMS.CoreBusiness", "IMS.CoreBusiness\IMS.CoreBusiness.csproj", "{8E3C48E9-A66A-49A2-93C1-4424E51FCA22}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IMS.Plugins", "IMS.Plugins", "{E21A437E-1780-42D3-B614-75E54865B5E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMS.Plugins.InMemory", "IMS.Plugins\IMS.Plugins.InMemory\IMS.Plugins.InMemory.csproj", "{4A38A54B-488B-40BD-B667-87074D5DF051}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IMS.Plugins.InMemory", "IMS.Plugins\IMS.Plugins.InMemory\IMS.Plugins.InMemory.csproj", "{4A38A54B-488B-40BD-B667-87074D5DF051}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

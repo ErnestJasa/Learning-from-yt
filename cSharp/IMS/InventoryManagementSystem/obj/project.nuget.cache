@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RGAEW/kAngkQxb8M99jObggZ2oDRgfmT1Li+4SXsRKghNicKbilTsHhSER2AcoL/qS7wJ8KlJmg0IDPyMJ+J5A==",
+  "dgSpecHash": "3cnCaPvk/ETE4UgviAZB8u8uBMnBW1niJIGjWukQdEhRa5+6yk4u+GJWhNXQQIdqJfN4jmY1BQ3kjjtAGYYOFw==",
   "success": true,
-  "projectFilePath": "D:\\visual studio\\IMS\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
+  "projectFilePath": "D:\\learning-from-yt\\cSharp\\IMS\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

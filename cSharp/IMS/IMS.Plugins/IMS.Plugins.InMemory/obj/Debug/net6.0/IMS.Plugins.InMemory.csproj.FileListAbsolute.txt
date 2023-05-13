@@ -15,3 +15,20 @@ D:\visual studio\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net6.0\IMS.Plugi
 D:\visual studio\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net6.0\refint\IMS.Plugins.InMemory.dll
 D:\visual studio\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net6.0\IMS.Plugins.InMemory.pdb
 D:\visual studio\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net6.0\ref\IMS.Plugins.InMemory.dll
+D:\learning-from-yt\cSharp\IMS\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net6.0\IMS.Plugins.InMemory.deps.json
+D:\learning-from-yt\cSharp\IMS\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net6.0\IMS.Plugins.InMemory.dll
+D:\learning-from-yt\cSharp\IMS\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net6.0\IMS.Plugins.InMemory.pdb
+D:\learning-from-yt\cSharp\IMS\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net6.0\IMS.CoreBusiness.dll
+D:\learning-from-yt\cSharp\IMS\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net6.0\IMS.UseCases.dll
+D:\learning-from-yt\cSharp\IMS\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net6.0\IMS.UseCases.pdb
+D:\learning-from-yt\cSharp\IMS\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net6.0\IMS.CoreBusiness.pdb
+D:\learning-from-yt\cSharp\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net6.0\IMS.Plugins.InMemory.csproj.AssemblyReference.cache
+D:\learning-from-yt\cSharp\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net6.0\IMS.Plugins.InMemory.GeneratedMSBuildEditorConfig.editorconfig
+D:\learning-from-yt\cSharp\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net6.0\IMS.Plugins.InMemory.AssemblyInfoInputs.cache
+D:\learning-from-yt\cSharp\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net6.0\IMS.Plugins.InMemory.AssemblyInfo.cs
+D:\learning-from-yt\cSharp\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net6.0\IMS.Plugins.InMemory.csproj.CoreCompileInputs.cache
+D:\learning-from-yt\cSharp\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net6.0\IMS.Plugins.InMemory.csproj.CopyComplete
+D:\learning-from-yt\cSharp\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net6.0\IMS.Plugins.InMemory.dll
+D:\learning-from-yt\cSharp\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net6.0\refint\IMS.Plugins.InMemory.dll
+D:\learning-from-yt\cSharp\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net6.0\IMS.Plugins.InMemory.pdb
+D:\learning-from-yt\cSharp\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net6.0\ref\IMS.Plugins.InMemory.dll

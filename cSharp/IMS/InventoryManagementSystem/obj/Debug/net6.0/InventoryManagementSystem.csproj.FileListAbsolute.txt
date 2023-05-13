@@ -37,3 +37,42 @@ D:\visual studio\IMS\InventoryManagementSystem\bin\Debug\net6.0\IMS.Plugins.InMe
 D:\visual studio\IMS\InventoryManagementSystem\bin\Debug\net6.0\IMS.UseCases.pdb
 D:\visual studio\IMS\InventoryManagementSystem\bin\Debug\net6.0\IMS.CoreBusiness.pdb
 D:\visual studio\IMS\InventoryManagementSystem\obj\Debug\net6.0\InventoryManagementSystem.csproj.CopyComplete
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\bin\Debug\net6.0\appsettings.Development.json
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\bin\Debug\net6.0\appsettings.json
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\bin\Debug\net6.0\InventoryManagementSystem.staticwebassets.runtime.json
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\bin\Debug\net6.0\InventoryManagementSystem.exe
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\bin\Debug\net6.0\InventoryManagementSystem.deps.json
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\bin\Debug\net6.0\InventoryManagementSystem.runtimeconfig.json
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\bin\Debug\net6.0\InventoryManagementSystem.dll
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\bin\Debug\net6.0\InventoryManagementSystem.pdb
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\bin\Debug\net6.0\IMS.CoreBusiness.dll
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\bin\Debug\net6.0\IMS.Plugins.InMemory.dll
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\bin\Debug\net6.0\IMS.UseCases.dll
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\bin\Debug\net6.0\IMS.Plugins.InMemory.pdb
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\bin\Debug\net6.0\IMS.UseCases.pdb
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\bin\Debug\net6.0\IMS.CoreBusiness.pdb
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\obj\Debug\net6.0\InventoryManagementSystem.csproj.AssemblyReference.cache
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\obj\Debug\net6.0\InventoryManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\obj\Debug\net6.0\InventoryManagementSystem.AssemblyInfoInputs.cache
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\obj\Debug\net6.0\InventoryManagementSystem.AssemblyInfo.cs
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\obj\Debug\net6.0\InventoryManagementSystem.csproj.CoreCompileInputs.cache
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\obj\Debug\net6.0\InventoryManagementSystem.MvcApplicationPartsAssemblyInfo.cache
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\obj\Debug\net6.0\InventoryManagementSystem.RazorAssemblyInfo.cache
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\obj\Debug\net6.0\InventoryManagementSystem.RazorAssemblyInfo.cs
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\obj\Debug\net6.0\staticwebassets\msbuild.InventoryManagementSystem.Microsoft.AspNetCore.StaticWebAssets.props
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\obj\Debug\net6.0\staticwebassets\msbuild.build.InventoryManagementSystem.props
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.InventoryManagementSystem.props
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.InventoryManagementSystem.props
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\obj\Debug\net6.0\staticwebassets.pack.json
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\obj\Debug\net6.0\staticwebassets.build.json
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\obj\Debug\net6.0\staticwebassets.development.json
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\obj\Debug\net6.0\scopedcss\bundle\InventoryManagementSystem.styles.css
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\obj\Debug\net6.0\scopedcss\projectbundle\InventoryManagementSystem.bundle.scp.css
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\obj\Debug\net6.0\InventoryManagementSystem.csproj.CopyComplete
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\obj\Debug\net6.0\InventoryManagementSystem.dll
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\obj\Debug\net6.0\refint\InventoryManagementSystem.dll
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\obj\Debug\net6.0\InventoryManagementSystem.pdb
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\obj\Debug\net6.0\InventoryManagementSystem.genruntimeconfig.cache
+D:\learning-from-yt\cSharp\IMS\InventoryManagementSystem\obj\Debug\net6.0\ref\InventoryManagementSystem.dll

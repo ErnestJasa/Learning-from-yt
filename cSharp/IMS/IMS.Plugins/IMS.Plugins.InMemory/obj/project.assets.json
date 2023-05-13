@@ -51,11 +51,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\visual studio\\IMS\\IMS.Plugins\\IMS.Plugins.InMemory\\IMS.Plugins.InMemory.csproj",
+      "projectUniqueName": "D:\\learning-from-yt\\cSharp\\IMS\\IMS.Plugins\\IMS.Plugins.InMemory\\IMS.Plugins.InMemory.csproj",
       "projectName": "IMS.Plugins.InMemory",
-      "projectPath": "D:\\visual studio\\IMS\\IMS.Plugins\\IMS.Plugins.InMemory\\IMS.Plugins.InMemory.csproj",
+      "projectPath": "D:\\learning-from-yt\\cSharp\\IMS\\IMS.Plugins\\IMS.Plugins.InMemory\\IMS.Plugins.InMemory.csproj",
       "packagesPath": "C:\\Users\\J\\.nuget\\packages\\",
-      "outputPath": "D:\\visual studio\\IMS\\IMS.Plugins\\IMS.Plugins.InMemory\\obj\\",
+      "outputPath": "D:\\learning-from-yt\\cSharp\\IMS\\IMS.Plugins\\IMS.Plugins.InMemory\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -77,8 +77,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\visual studio\\IMS\\IMS.UseCases\\IMS.UseCases.csproj": {
-              "projectPath": "D:\\visual studio\\IMS\\IMS.UseCases\\IMS.UseCases.csproj"
+            "D:\\learning-from-yt\\cSharp\\IMS\\IMS.UseCases\\IMS.UseCases.csproj": {
+              "projectPath": "D:\\learning-from-yt\\cSharp\\IMS\\IMS.UseCases\\IMS.UseCases.csproj"
             }
           }
         }

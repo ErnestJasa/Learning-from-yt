@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EdTSgL3aekLqESNYGOYnQApPo8jOnf78P/5t+0p+aWVCta5j9ExA+Sr/6mwq6alI/1axdnxKPj5rDkNEaT3ZqQ==",
+  "dgSpecHash": "H7eWP+sD681ij+BzRes71lFovrg8DL5IUjKehdyU1mLLp1FsSs82Th57MFtHqq6dWaMIegLOwdOEGSADgewpmQ==",
   "success": true,
-  "projectFilePath": "D:\\visual studio\\IMS\\IMS.Plugins\\IMS.Plugins.InMemory\\IMS.Plugins.InMemory.csproj",
+  "projectFilePath": "D:\\learning-from-yt\\cSharp\\IMS\\IMS.Plugins\\IMS.Plugins.InMemory\\IMS.Plugins.InMemory.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
