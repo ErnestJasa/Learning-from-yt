@@ -4,6 +4,8 @@ using AuthExampleThree.Data;
 using AuthExampleThree.Areas.Identity.Data;
 using Microsoft.AspNetCore.Server.HttpSys;
 using Microsoft.AspNetCore.Authentication.Cookies;
+
+// tutorial https://youtu.be/wzaoQiS_9dI?list=PLuyywttDftVX8xTNErbwKUp2VYarnDm2B
 // Setting up : step 1. right click project, add, new scaffolded item, on the left select Identity
 //              step 2. Select what you want to add from the contents (login/registration/logout)
 //              step 3. on the right top, click three dots, select Views -> Shared folder on the left and _Layout.cshtml
