@@ -28,8 +28,8 @@ namespace AuthExample.Controllers
             {
                 List<Claim> claims = new List<Claim>()
                 {
-                    new Claim(ClaimTypes.NameIdentifier, modelLogin.Email), // i guess this is to pass to the view what to use as a username
-                    new Claim("OtherProperties", "Example Role"),            // and this is to set for example roles of admin/user or such
+                    new Claim(ClaimTypes.NameIdentifier, modelLogin.Email),
+                    new Claim("OtherProperties", "Example Role"),            //  this is to set for example roles of admin/user or such
                     new Claim(ClaimTypes.Name, "user")
                 };
 
