@@ -26,6 +26,7 @@ namespace AuthExampleThree.Areas.Identity.Pages.Account
     {
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IUserStore<ApplicationUser> _userStore;
         private readonly IUserEmailStore<ApplicationUser> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
@@ -36,7 +37,8 @@ namespace AuthExampleThree.Areas.Identity.Pages.Account
             IUserStore<ApplicationUser> userStore,
             SignInManager<ApplicationUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            RoleManager<IdentityRole> roleManager)            
         {
             _userManager = userManager;
             _userStore = userStore;
@@ -44,6 +46,7 @@ namespace AuthExampleThree.Areas.Identity.Pages.Account
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            _roleManager = roleManager;
         }
 
         /// <summary>
@@ -82,6 +85,12 @@ namespace AuthExampleThree.Areas.Identity.Pages.Account
             [DataType(DataType.Text)]
             [Display(Name = "Username")]
             public string Username { get; set; }
+
+            [DataType(DataType.Text)]
+            [Display(Name = "Role")]
+            public string Role { get; set; }
+
+
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
@@ -125,12 +134,22 @@ namespace AuthExampleThree.Areas.Identity.Pages.Account
             if (ModelState.IsValid)
             {
                 var user = CreateUser();
+                var role = new IdentityRole();
 
                 user.FirstName = Input.FirstName; 
                 user.LastName = Input.LastName;
-                user.UserName = Input.Username;
+                role.Name = Input.Role;
+                if(! await _roleManager.RoleExistsAsync(role.Name))
+                {
+                    await _roleManager.CreateAsync(new IdentityRole(role.Name));
+                }
+                if(await _roleManager.RoleExistsAsync(role.Name))
+                {
+                    await _userManager.AddToRoleAsync(user, role.Name);
+                }
+                
 
-                await _userStore.SetUserNameAsync(user, Input.Username, CancellationToken.None);
+                await _userStore.SetUserNameAsync(user, Input.FirstName, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
                 var result = await _userManager.CreateAsync(user, Input.Password);
 

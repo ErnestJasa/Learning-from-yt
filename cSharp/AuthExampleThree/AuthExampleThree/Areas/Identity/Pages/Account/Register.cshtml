@@ -2,7 +2,7 @@
 @model RegisterModel
 @{
     ViewData["Title"] = "Register";
-    Layout = "~/Areas/Identity/Pages/_AuthLayout.cshtml";
+    Layout = "~/Areas/Identity/Pages/_AuthLayout.cshtml";    
 }
 
 
@@ -26,9 +26,13 @@
         </div>
     </div>
     <div class="form-floating mb-3">
-        <input asp-for="Input.Username" class="form-control" autocomplete="username" aria-required="true" placeholder="Username..." />
-        <label asp-for="Input.Username">Username</label>
-        <span asp-validation-for="Input.Username" class="text-danger"></span>
+        <select asp-for="Input.Role" class="form-select " autocomplete="role" aria-required="true"  >
+            <option selected>Select role</option>
+            <option value="admin">Admin</option>
+            <option value="user">User</option>
+        </select>
+        <label asp-for="Input.Role">Role</label>
+        <span asp-validation-for="Input.Role" class="text-danger"></span>
     </div>
     <div class="form-floating mb-3">
         <input asp-for="Input.Email" class="form-control" autocomplete="email" aria-required="true" placeholder="name@example.com" />
