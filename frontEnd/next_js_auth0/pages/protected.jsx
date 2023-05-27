@@ -9,7 +9,6 @@ import { withPageAuthRequired } from '@auth0/nextjs-auth0/client';
 const Protected = () => {
  
   const { user } = useUser();
-
   
   console.log(user)
 if(user.user_roles.includes('admin')){
