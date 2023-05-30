@@ -45,6 +45,17 @@ namespace MvcTutorial.Repository
             return saved > 0 ? true : false;
         }
 
+        public async Task<IEnumerable<Club>> SearchForClub(string SearchString)
+        {
+            var clubs = from c in _context.Clubs
+                        select c;
+            if (!String.IsNullOrEmpty(SearchString))
+            {
+                clubs =  _context.Clubs.Where(x => x.Title.Contains(SearchString) || x.Address.City.Contains(SearchString));
+            }
+            return await clubs.ToListAsync();
+        }
+
         public bool Update(Club club)
         {
             _context.Update(club);

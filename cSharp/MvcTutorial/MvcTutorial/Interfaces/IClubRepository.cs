@@ -7,6 +7,7 @@ namespace MvcTutorial.Interfaces
         Task<IEnumerable<Club>> GetAll();
         Task<Club> GetByIdAsync(int id);
         Task<IEnumerable<Club>> GetClubByCity(string city);
+        Task<IEnumerable<Club>> SearchForClub(string SearchString);
         bool Add(Club club);
         bool Update(Club club);
         bool Delete(Club club);

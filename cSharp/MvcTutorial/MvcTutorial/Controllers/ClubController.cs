@@ -17,11 +17,16 @@ namespace MvcTutorial.Controllers         // Watched till video 10 https://www.y
             _clubRepository = clubRepository;
             _photoService = photoService;
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string SearchString)
         {
-            IEnumerable<Club> clubs = await _clubRepository.GetAll();
+            //var clubs = await _clubRepository.GetAll();
+             ViewData["CurrentFilter"] = SearchString;
+             var   clubs = await _clubRepository.SearchForClub(SearchString);
+           
             return View(clubs);
-        }
+
+        }      
+
         public async Task<IActionResult> Detail(int id)
         {
             Club club = await _clubRepository.GetByIdAsync(id);
@@ -102,16 +107,16 @@ namespace MvcTutorial.Controllers         // Watched till video 10 https://www.y
                 }
 
                 var photoResult = await _photoService.AddPhotoAsync(clubVM.Image);
-              
+
                 userClub.Title = clubVM.Title;
                 userClub.Description = clubVM.Description;
                 userClub.ClubCategory = clubVM.ClubCategory;
-                userClub.Image = photoResult.Url.ToString();                
+                userClub.Image = photoResult.Url.ToString();
                 userClub.Address.Street = clubVM.Address.Street;
                 userClub.Address.City = clubVM.Address.City;
                 userClub.Address.State = clubVM.Address.State;
- 
-                
+
+
                 _clubRepository.Update(userClub);
 
                 return RedirectToAction("index");
