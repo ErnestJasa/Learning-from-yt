@@ -1,7 +1,6 @@
 import { data } from "./data.js";
 import { useState } from "react";
 function App() {
-  const [search, setSearch] = useState("");
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState(new Date());
 
@@ -26,9 +25,9 @@ function App() {
             {data
               .filter((item) => {
                 if (startDate !== "") {
-                  const itemDate = new Date(item.date).getTime();
-                  const start = new Date(startDate).getTime();
-                  const end = new Date(endDate).getTime();
+                  const itemDate = new Date(item.date).setHours(0,0,0,0);
+                  const start = new Date(startDate).setHours(0, 0, 0, 0);
+                  const end = new Date(endDate).setHours(0, 0, 0, 0);
                   return itemDate >= start  && itemDate <= end;
                 } else {
                   return item;
