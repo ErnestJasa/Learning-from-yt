@@ -11,5 +11,6 @@ namespace MvcTutorial.Interfaces
         bool Update(Race race);
         bool Delete(Race race);
         bool Save();
+        Task<IEnumerable<Race>> SearchByDate(DateTime? start, DateTime? end);
     }
 }

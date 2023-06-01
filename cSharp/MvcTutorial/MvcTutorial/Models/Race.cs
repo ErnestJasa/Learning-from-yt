@@ -18,6 +18,7 @@ namespace MvcTutorial.Models
         [ForeignKey("AppUser")]
         public string? AppUserId { get; set; }
         public AppUser? AppUser { get; set; }
+        public DateOnly? Date { get; set; }
 
 
         //public AppUser GetAppUser()

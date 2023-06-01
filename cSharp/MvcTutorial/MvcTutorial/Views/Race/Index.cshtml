@@ -8,6 +8,14 @@
 
 <div class="album py-5 bg-light">
     <div class="container">
+        <form asp-action="index" method="get">
+            <div class="input-group m-2">
+                <label class="form-label m-2" for="SearchString">Search:</label>
+                <input type="date" name="Start"  />
+                <input type="date" name="End"  />
+                <input type="submit" value="Search" class="btn btn-primary input-group-text" />
+            </div>
+        </form>
         <div class="row">
             @foreach (var item in Model)
             {

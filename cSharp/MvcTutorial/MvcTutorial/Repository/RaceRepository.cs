@@ -13,6 +13,8 @@ namespace MvcTutorial.Repository
             _context = context;
         }
 
+
+
         public bool Add(Race race)
         {
             _context.Add(race);
@@ -32,7 +34,7 @@ namespace MvcTutorial.Repository
 
         public async Task<IEnumerable<Race>> GetAllRacesByCity(string city)
         {
-           return await _context.Races.Where(c => c.Address.City == city).ToListAsync();
+            return await _context.Races.Where(c => c.Address.City == city).ToListAsync();
         }
 
         public async Task<Race> GetByIdAsync(int id)
@@ -44,6 +46,17 @@ namespace MvcTutorial.Repository
         {
             var saved = _context.SaveChanges();
             return saved > 0 ? true : false;
+        }
+
+        public async Task<IEnumerable<Race>> SearchByDate(DateTime? start, DateTime? end)
+        {
+            var races = from r in _context.Races
+                        select r;
+            if (start != null && end != null)
+            {
+                races = races.Where(x => x.Date >= DateOnly.FromDateTime((DateTime)start) && x.Date <= DateOnly.FromDateTime((DateTime)end));
+            }
+            return await races.ToListAsync();
         }
 
         public bool Update(Race race)

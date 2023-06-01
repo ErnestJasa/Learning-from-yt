@@ -18,9 +18,16 @@ namespace MvcTutorial.Controllers
             _raceRepository = raceRepository;
             _photoService = photoService;
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(DateTime? start, DateTime? end)
         {
-            IEnumerable<Race> races = await _raceRepository.GetAll();
+            //IEnumerable<Race> races = new List<Race>();
+            //if (start == null && end == null)
+            //{
+
+            //    races = await _raceRepository.GetAll();
+            //    return View(races);
+            //}
+           var races = await _raceRepository.SearchByDate(start, end);
             return View(races);
         }
         public async Task<IActionResult> Detail(int id)

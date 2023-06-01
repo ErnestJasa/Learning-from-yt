@@ -51,7 +51,7 @@ namespace MvcTutorial.Repository
                         select c;
             if (!String.IsNullOrEmpty(SearchString))
             {
-                clubs =  _context.Clubs.Where(x => x.Title.Contains(SearchString) || x.Address.City.Contains(SearchString));
+                clubs =  clubs.Where(x => x.Title.Contains(SearchString) || x.Address.City.Contains(SearchString));
             }
             return await clubs.ToListAsync();
         }
