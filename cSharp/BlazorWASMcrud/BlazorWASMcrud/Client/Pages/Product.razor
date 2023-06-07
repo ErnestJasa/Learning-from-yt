@@ -1,0 +1,87 @@
+﻿@page "/product"
+@page "/product/{id:int}"
+@inject IProductService ProductService
+@inject NavigationManager NavigationManager
+
+
+@if (Id is null)
+{
+    <PageTitle>Create a new Product</PageTitle>
+    <h3>Create a new Product</h3>
+}
+else
+{
+    <PageTitle>Edit @product.Title</PageTitle>
+    <h3>Edit @product.Title</h3>
+}
+
+<EditForm Model="product" OnSubmit="HandleSubmit">
+    <div>
+        <label for="title">Title</label>
+        <InputText required placeholder="Product Title" id="title" @bind-Value="product.Title" class="form-control" />
+    </div>
+    <div>
+        <label for="Category">Category</label>
+        <InputText placeholder="Product Category" id="Category" @bind-Value="product.Category" class="form-control" />
+    </div>
+    <div>
+        <label for="Price">Price</label>
+        <InputNumber id="Price" @bind-Value="product.Price" class="form-control" />
+    </div>
+    <div class="d-flex">
+        <button type="submit" class="btn mt-3 btn-primary">@btnText</button>
+        @if (Id is not null)
+        {
+            <button type="button" class="btn mt-3 ms-auto btn-danger" @onclick="DeleteProduct">Delete Product</button>
+        }
+    </div>
+</EditForm>
+
+
+@code {
+    [Parameter]
+    public int? Id { get; set; }
+
+
+    string btnText = string.Empty;
+
+    BlazorWASMcrud.Shared.Product product = new BlazorWASMcrud.Shared.Product { Title = string.Empty };
+
+    protected override void OnInitialized()
+    {
+        btnText = Id == null ? "Save New Product" : "Update Product";
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (Id is not null)
+        {
+            var result = await ProductService.GetProductById((int)Id);
+            if (result is not null)
+            {
+                product = result;
+            }
+            else
+            {
+                NavigationManager.NavigateTo("/product");
+            }
+        }
+    }
+
+    async Task HandleSubmit()
+    {
+        if (Id is null)
+        {
+            await ProductService.CreateProduct(product);
+        }
+        else
+        {
+            await ProductService.UpdateProduct((int)Id, product);
+        }
+    }
+
+    async Task DeleteProduct()
+    {
+        await ProductService.DeleteProduct(product.Id);
+    }
+}
