@@ -3,6 +3,10 @@
 @inject NavigationManager NavigationManager
 <h3>Products</h3>
 
+@if(_Products == null)
+{
+    <div class="spinner"> </div>
+}else{
 <table class="table">
     <thead>
         <tr>
@@ -13,7 +17,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var product in ProductService.Products)
+        @foreach (var product in _Products)
         {
             <tr>
                 <td>@product.Title</td>
@@ -28,12 +32,16 @@
         }
     </tbody>
 </table>
-<button class="btn btn-primary" @onclick="CreateNewProduct">Create New Product</button>
+<button class="btn btn-primary" @onclick="CreateNewProduct">Create New Product</button>}
 
 @code {
+    IEnumerable<BlazorWASMcrud.Shared.Product>? _Products;
+    
+
     protected override async Task OnInitializedAsync()
     {
         await ProductService.GetProducts();
+       _Products = ProductService.Products;
     }
 
     void ShowProduct(int id)

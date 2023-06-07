@@ -15,7 +15,7 @@ namespace BlazorWASMcrud.Client.Services.ProductService
             _http = http;
             _navigationManager = navigationManager;
         }
-        public List<Product> Products { get; set; } = new List<Product>();
+        public IEnumerable<Product> Products { get; set; }
 
         public async Task CreateProduct(Product product)
         {
