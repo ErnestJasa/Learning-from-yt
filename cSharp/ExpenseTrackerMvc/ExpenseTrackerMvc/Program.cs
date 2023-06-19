@@ -27,8 +27,8 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Dashboard}/{action=Index}/{id?}");
 
 app.Run();
 
-//https://youtu.be/zQ5eijfpuu8?list=PLuyywttDftVX8xTNErbwKUp2VYarnDm2B&t=3259
+// https://www.youtube.com/watch?v=zQ5eijfpuu8&list=PLuyywttDftVX8xTNErbwKUp2VYarnDm2B&t=5127s
