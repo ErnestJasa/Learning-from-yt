@@ -1,5 +1,80 @@
-﻿
+﻿@{
+    List<Object> menuItems = new List<Object>();
+    menuItems.Add(new
+    {
+        text = "General",
+        separator = true
 
-<ejs-sidebar id="sidebar" width="290px">
+    });
+    menuItems.Add(new
+    {
+        text = "Dashboard",
+        url = "/",
+        iconCss = "fa-solid fa-box"
+    });
+    menuItems.Add(new
+    {
+        text = "Categories",
+        url = "/Category",
+        //items = new List<Object>()    // to have child items
+        //{
+        //  new { text = "Open" }
+        //  new { text = "Save" }
+        //  new { text = "Exit" }
+        //},
+        iconCss = "fa-solid fa-folder-closed"
 
+    });
+    menuItems.Add(new
+    {
+        text = "Transactions",
+        url = "/Transaction",
+        iconCss = "fa-solid fa-arrow-right-arrow-left"
+    });
+    menuItems.Add(new
+    {
+        text = "Extras",
+        separator = true
+
+    });
+    menuItems.Add(new
+    {
+        text = "Dummy item 1",
+        url = "#",
+        iconCss = "fa-solid fa-arrow-right-arrow-left"
+    });
+    menuItems.Add(new
+    {
+        text = "Dummy item 2",
+        url = "/Transaction",
+        iconCss = "fa-solid fa-arrow-right-arrow-left"
+    });
+}
+
+<ejs-sidebar id="sidebar" width="290px" enableDock dockSize="100px" target=".dock-target" enableGestures="false">
+    <e-content-template>
+        <div class="logo-wrapper">
+            <div class="app-logo">
+                <img src="~/logo.png" />
+            </div>
+            <div class="w-100"></div>
+            <i id="sidebar-toggler" class="fa-solid"></i>
+        </div>
+        <div class="profile-wrapper">
+            <div class="titles d-flex flex-column ps-3">
+                <h6 class="mb-0">Wallet App</h6>
+                <span class="text-muted">User Name</span>
+            </div>
+        </div>
+        <ejs-menu id="menu" items="menuItems" orientation="Vertical" hamburgerMode></ejs-menu>
+    </e-content-template>
 </ejs-sidebar>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function (){
+                    dockBar = document.getElementById('sidebar').ej2_instances[0];
+                    document.getElementById('sidebar-toggler').onclick = function (){
+                        dockBar.toggle();
+                    }
+                });
+            </script>
