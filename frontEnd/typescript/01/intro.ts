@@ -1,4 +1,4 @@
-// tutorial https://youtu.be/30LWjhZzg50?t=13678
+// tutorial https://youtu.be/30LWjhZzg50
 
 let user = {
     name: "nameyname",
