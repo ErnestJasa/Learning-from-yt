@@ -1,4 +1,4 @@
-import Starter from "./tutorial/08-custom-hooks/starter/02-fetch-data";
+import Starter from "./tutorial/11-performance/starter/04-react-18";
 // if in the folder there is an index file, we dont need to specify the file like this /Navbar/Navbar
 // import Navbar from "./tutorial/04-project-structure/starter/Navbar";
 import Navbar from "./tutorial/09-context-api/starter/Navbar";
@@ -12,9 +12,9 @@ import List from "./tutorial/05-leverage-javascript/starter/List";
 function App() {
   return (
     <div className="container">
-      {/* <Starter /> */}
+      <Starter />
       {/* <List /> */}
-      <Navbar />
+      {/* <Navbar /> */}
     </div>
   );
 }
