@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playthings</title>
+    <link rel="stylesheet" href="styles/dom-playthings.css" />
+  </head>
+  <body>
+    <p>Subscribe button</p>
+    <button onclick="subscribe();" class="js-sub-button sub-button">
+      Subscribe
+    </button>
+    <p>Shipping calculator</p>
+    <input
+      pattern="[0-9]"
+      onkeydown="handleKeyDown(event)"
+      type="number"
+      class="js-cost-input cost-input"
+      placeholder="Cost of order"
+    />
+    <button class="calculate-button" onclick="calculateTotal()">
+      Calculate
+    </button>
+
+    <p class="js-total-cost"></p>
+    <script src="scripts/dom-playthings.js"></script>
+  </body>
+</html>

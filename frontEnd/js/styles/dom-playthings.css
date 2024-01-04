@@ -1,0 +1,36 @@
+body {
+  font-family: Arial;
+}
+.sub-button {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.subbed-button {
+  background-color: rgb(240, 240, 240);
+  color: black;
+}
+
+.cost-input {
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 25px;
+  border-color: black;
+}
+.calculate-button {
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  padding: 10px 15px;
+  margin: 4px;
+}
