@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="" class="js-button">CLick</button>
+    <h4 class="js-timer"></h4>
+    <script>
+      const buttonElement = document.querySelector(".js-button");
+      const timerElement = document.querySelector(".js-timer");
+
+      function logElapsedTime(startTime) {
+        const currentTime = new Date();
+        const elapsedTime = currentTime - startTime;
+        if (elapsedTime >= 1000) {
+          const seconds = Math.floor(elapsedTime / 1000);
+          const remainingMilliseconds = elapsedTime % 1000;
+          //   console.log(seconds + "." + remainingMilliseconds);
+          timerElement.innerHTML = `${seconds}.${remainingMilliseconds}`;
+          if (seconds >= 60) {
+            const minutes = Math.floor(seconds / 60);
+            const remainingSeconds = seconds % 60;
+            console.log(minutes + ". " + remainingSeconds);
+          }
+        } else {
+          timerElement.innerHTML = `${elapsedTime}`;
+          //   console.log(elapsedTime);
+        }
+        // console.log(elapsedTime);
+      }
+      let startTime;
+      buttonElement.addEventListener("click", function () {
+        startTime = new Date();
+        const intervalId = setInterval(() => {
+          logElapsedTime(startTime);
+        }, 1);
+      });
+      //   const intervalId = setInterval(() => {
+      //     logCurrentTime();
+      //   }, 3000);
+      /*
+      const buttonElement = document.querySelector(".js-button");
+      const eventFunction = () => {
+        console.log("clicked");
+      };
+      buttonElement.addEventListener("click", eventFunction);
+      // can remove event listener, but need to pass a function you want to remove,
+      // so have to have it somewhere outside.
+      // Also even if remove is after the add, the function wont run
+      buttonElement.removeEventListener("click", eventFunction);
+      buttonElement.addEventListener("click", () => {
+        console.log("clicked2");
+      });
+      */
+      /*
+      function greeting() {
+        console.log("hello");
+      }
+      greeting();
+      const function1 = function greeting() {
+        console.log("hello2");
+      };
+      console.log(function1);
+      function1();
+
+      const obj1 = {
+        num: 1,
+        fun: function greeting() {
+          console.log("hello3");
+        },
+      };
+      obj1.fun();
+
+      function run(param) {
+        // you can pass a function into a function. Seems dumb but its javascript
+        param();
+      }
+      run(function () {
+        console.log("hello4");
+      });
+      */
+
+      /*
+      setTimeout(function () {
+        console.log("timeout");
+      }, 3000);
+      console.log("next line");
+
+      let intervalId = setInterval(function () {
+        console.log("interval");
+      }, 3000);
+      console.log("next line2");
+      clearInterval(intervalId); // to stop an interval from running.
+      */
+
+      /*
+      ["first value", "second value", "third value"].forEach(function (
+        value,
+        index
+      ) {
+        if (value === "second value") {
+          return;
+        }
+        console.log(value + index);
+      });
+      */
+
+      /*
+      console.log(
+        // filter method creates a new array
+        [1, -3, 5].filter((value, index) => {
+          if (value >= 0) {
+            // if we return true in filter method, the value gets added to the new array
+            return true;
+          } else {
+            // if we return false, the value doesn't get added to the new array
+            return false;
+          }
+          //   return value >= 0; // shorter version of above
+        })
+      );*/
+    </script>
+  </body>
+</html>
