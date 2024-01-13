@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  /*   
+  sets some image as background
+  background-image:url(someImage.jpg);
+
+  sets its position to center
+  background-position: center;
+
+  makes it not repeat itself if its too small
+  background-repeat: no-repeat;
+
+  makes it cover the whole screen
+  background-size: cover;
+
+  makes it not move while scrolling
+  background-attachment: fixed;
+  */
+}
+#clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border: 2px solid;
+}
+#clock {
+  font-family: monospace;
+  font-size: 6.5rem;
+  font-weight: bold;
+  text-align: center;
+}
