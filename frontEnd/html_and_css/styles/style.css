@@ -1,0 +1,81 @@
+/*
+can add fonts like this, from your own files so that it would guarantee that the user has it.
+ @font-face {
+  src: url(fonts/someFont.ttf);
+  font-family: some-font;
+} */
+body {
+  /* background-color: black; */
+  /* color: white; */
+  border: 3px solid;
+  display: flow-root; /* allows the elements with float property to not exit the container*/
+}
+h2 {
+  color: aqua;
+}
+/* #p1 {
+  color: red;
+}
+#p2 {
+  color: orange;
+}
+#p3 {
+  color: yellow;
+}
+#p4 {
+  color: green;
+} */
+.odd {
+  color: red;
+}
+.even {
+  color: blue;
+}
+p {
+  font-size: 1em; /* em - percentages (1em = 100%, 1.5em = 150%), 1rem = 16px*/
+}
+h1 {
+  /* border-style: solid;
+    border-width: 3px;
+    border-color: purple; */
+  border: 3px solid hsl(262, 100%, 56%); /* same as above, just in one element */
+  border-radius: 20px;
+}
+p {
+  border-bottom: 3px solid rgb(256, 28, 28);
+  border-top: 3px solid yellow;
+  border-left: 3px dotted orange;
+  border-right: 3px dashed green;
+  border-radius: 10px;
+}
+
+.shadows-h1 {
+  border: none;
+  text-shadow: 3px 3px 5px red, 3px 3px 5px cyan; /* first number moves it left/right, second up/down, third blurs. can have multiple shadows separated by comma*/
+}
+.shadows {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(234, 234, 234);
+  box-shadow: 5px 5px 10px;
+}
+.box {
+  background-color: gray;
+  height: 200px;
+  width: 200px;
+}
+#box1 {
+  float: left;
+  margin-right: 10px;
+}
+#box2 {
+  background-color: burlywood;
+  float: right;
+  margin-left: 10px;
+}
+.float-h1 {
+  border: none;
+}
+.float-p {
+  border: none;
+}

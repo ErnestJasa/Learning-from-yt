@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:link {
+        color: hsl(201, 100%, 74%);
+      }
+      a:hover {
+        color: hsl(201, 100%, 86%);
+        font-size: 1.1em;
+      }
+      a:active {
+        color: hsl(201, 100%, 50%);
+        font-size: 1.1em;
+      }
+      a:visited {
+        color: hsl(0, 0, 75%);
+      }
+      #ul-numbers li:hover {
+        background-color: hsl(60, 100%, 72%);
+      }
+      #ul-numbers li:not(hover) {
+        background-color: hsl(60, 0%, 72%);
+      }
+      #ul-numbers li:nth-child(3n + 1) {
+        background-color: hsl(60, 100%, 72%);
+      }
+      #greeting p {
+        background-color: hsl(196, 100%, 81%);
+        padding: 10px;
+        display: none;
+      }
+      #greeting:hover p {
+        display: block;
+      }
+
+      h1::first-letter {
+        font-size: 2em;
+        font-style: italic;
+      }
+      p::first-line {
+        background-color: hsl(60, 100%, 77%);
+      }
+      p::selection {
+        color: rgb(89, 255, 71);
+        background-color: hsl(0, 0%, 21%);
+      }
+
+      #apple::after {
+        content: "🍎";
+      }
+      #orange::after {
+        content: "🍊";
+      }
+      #banana::after {
+        content: "🍌";
+      }
+      #fruit li::marker {
+        content: "✔";
+        color: hsl(120, 100%, 64%);
+        font-size: 1.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        pseudo element - keyword added after a selector that's used to style a specific part of an element
+
+        selector::pseudo-element
+     -->
+
+    <h1>Hello</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tempore
+      distinctio maxime ex sunt eius repudiandae, repellat ut! Nostrum placeat
+      voluptas possimus laudantium veniam nihil a eligendi tempore asperiores
+      aliquid?
+    </p>
+    <ul id="fruit">
+      <li id="apple">apple</li>
+      <li id="orange">orange</li>
+      <li id="banana">banana</li>
+    </ul>
+    <a href="https://google.com">Google</a>
+    <ul id="ul-numbers">
+      <li>this is #1</li>
+      <li>this is #2</li>
+      <li>this is #3</li>
+      <li>this is #4</li>
+      <li>this is #5</li>
+      <li>this is #6</li>
+      <li>this is #7</li>
+      <li>this is #8</li>
+      <li>this is #9</li>
+    </ul>
+    <div id="greeting">
+      hover header
+      <p>hello</p>
+    </div>
+  </body>
+</html>
