@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .box {
+        width: 250px;
+        height: 250px;
+        border: 5px solid;
+        font-size: 13em;
+        text-align: center;
+        transform: translateX(100px) rotateZ(45deg) scale(0.5);
+      }
+      #box1 {
+        background-color: hsl(120, 100%, 70%);
+        /* transform: translateX(50px); */ /* moves the element on the x axis or translateY to move on the y axis */
+        /* transform: translate(50px, 50px); */ /* can move on both y and x axes */
+        /* transform: rotateZ(45deg); */
+        /* transform: scaleY(2); */ /* scales the element by %. 1 = 100%, 1.1 = 100% etc */
+        /* transform: skewX(30deg); */
+        /* transform: translateX(100%) rotateZ(90deg) scale(0.5); */
+      }
+      #box1 {
+        background-color: hsl(120, 100%, 70%);
+      }
+      #box2 {
+        background-color: hsl(0, 100%, 70%);
+      }
+      #box3 {
+        background-color: hsl(217, 100%, 70%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- transform - css property lets you rotate,
+                     scale, skew or translate an element -->
+    <div class="box" id="box1">Hi</div>
+    <div class="box" id="box2">Hi</div>
+    <div class="box" id="box3">Hi</div>
+  </body>
+</html>
