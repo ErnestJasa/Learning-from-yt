@@ -6,7 +6,7 @@ class Person {
   }
 
   set firstName(newFirstName) {
-    if (typeof newFirstName === "string" && newFirstName.length < 0) {
+    if (typeof newFirstName === "string" && newFirstName.length > 0) {
       // underscore (_) makes the variable private
       this._firstName = newFirstName;
     } else {
@@ -14,7 +14,7 @@ class Person {
     }
   }
   set lastName(newLastName) {
-    if (typeof newLastName === "string" && newLastName.length < 0) {
+    if (typeof newLastName === "string" && newLastName.length > 0) {
       // underscore (_) makes the variable private
       this._lastName = newLastName;
     } else {
@@ -22,7 +22,7 @@ class Person {
     }
   }
   set age(newAge) {
-    if (typeof newAge === "number" >= 0) {
+    if (typeof newAge === "number" && newAge >= 0) {
       this._age = newAge;
     } else {
       console.error("last name must be a non-negative number");
@@ -43,4 +43,8 @@ class Person {
   }
 }
 
-const person = new Person(420, 69, "pizza");
+const person = new Person("fsdaf", "sgfdg", 66);
+
+console.log(person.age);
+person.age = 45;
+console.log(person.age);
